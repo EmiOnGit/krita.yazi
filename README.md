@@ -3,7 +3,12 @@
 A simple plugin to add krita previews to yazi
 
 ### Usage
-To use this plugin add following sections to your `yazi.toml`
+To use this plugin install it with the yazi package manager
+```bash 
+ya pack -a EmiOnGit/krita
+```
+
+Then add following sections to your `yazi.toml`
 ```toml
 # yazi.toml
 [plugin]
