@@ -34,11 +34,11 @@ function M:preload(job)
 	local cache_url = ya.file_cache(job)
 
 	if not cache_url or fs.cha(cache_url) then
-		return 1
+		return true
 	end
 	local child = M.extract_7z(job.file.url, cache_url)
 	
-	return 1
+	return true
 end
 
 return M
